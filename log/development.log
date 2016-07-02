@@ -1,0 +1,2238 @@
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 15:48:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 53ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTopics (20160625154857)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  CREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "string" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160625154857"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTopics (20160625154857)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.1ms)[0m  DROP TABLE "topics"
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160625154857"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.8ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTopics (20160625154857)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160625154857"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 15:59:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 45ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 15:59:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 15:59:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 15:59:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:02:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:02:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.9ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 1529ms (Views: 1511.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:02:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:02:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:05:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (88.7ms)
+  Rendered topics/new.html.erb within layouts/application (114.6ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbaf9977c>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__584685118'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.3ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:05:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (26.3ms)
+  Rendered topics/new.html.erb within layouts/application (41.7ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xb4f87c30>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__629393508'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:05:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 131ms (Views: 129.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:05:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (21.6ms)
+  Rendered topics/new.html.erb within layouts/application (42.5ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xba3e3f54>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__584685118'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:05:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (16.8ms)
+  Rendered topics/new.html.erb within layouts/application (32.7ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbbc945e4>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__629393508'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:07:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (23.6ms)
+  Rendered topics/new.html.erb within layouts/application (45.9ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbbd827a8>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__586217208'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__584685118'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:07:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (18.9ms)
+  Rendered topics/new.html.erb within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbba15e94>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/topics/_form.html.erb:20:in `block in _app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/_form.html.erb:1:in `_app_views_topics__form_html_erb___927269336__629397728'
+  app/views/topics/new.html.erb:3:in `_app_views_topics_new_html_erb___317020263__629393508'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (7.2ms)
+  Rendered topics/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 135ms (Views: 134.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:10:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics" for 10.0.2.2 at 2016-06-25 16:11:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3zNw4yetuQ7e9HhBuQHomWpYTlSWJjTZli0+NPlEq2og1vlp9vVKQRqrJWCIT6gkkfRMyX2E5s902Xxo22u94Q==", "topic"=>{"title"=>"Puppies", "description"=>"why are puppies so cute?"}, "commit"=>"Create Topic"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Puppies"], ["description", "why are puppies so cute?"], ["created_at", "2016-06-25 16:11:33.906833"], ["updated_at", "2016-06-25 16:11:33.906833"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics/1
+Completed 302 Found in 17ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/topics/1" for 10.0.2.2 at 2016-06-25 16:11:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbbdbb15c>):
+     7: 
+     8: <p>
+     9:   <strong>String:</strong>
+    10:   <%= @topic.string %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/topics/show.html.erb:10:in `_app_views_topics_show_html_erb___920124040__571616778'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.1ms)
+
+
+Started GET "/topics/1" for 10.0.2.2 at 2016-06-25 16:12:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.9ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 114.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:12:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbbb8a98c>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= topic.title %></td>
+    19:         <td><%= topic.string %></td>
+    20:         <td><%= topic.description %></td>
+    21:         <td><%= link_to 'Show', topic %></td>
+    22:         <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__703615508__572637888'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__703615508__572637888'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:12:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.5ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (undefined method `string' for #<Topic:0xbb0e6508>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= topic.title %></td>
+    19:         <td><%= topic.string %></td>
+    20:         <td><%= topic.description %></td>
+    21:         <td><%= link_to 'Show', topic %></td>
+    22:         <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__703615508__577316578'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__703615508__577316578'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:12:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:12:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:12:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 16:24:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.9ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:24:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:24:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:24:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:24:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:24:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:24:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:25:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:25:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:26:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (2.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 140ms (Views: 121.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 16:29:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics/1" for 10.0.2.2 at 2016-06-25 16:29:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (1.5ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 129ms (Views: 125.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 120.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 17:36:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 17:36:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 17:36:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 17:36:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics/1" for 10.0.2.2 at 2016-06-25 17:36:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (2.0ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 135ms (Views: 130.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 17:37:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 123ms (Views: 121.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 17:37:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (2.0ms)
+  Rendered topics/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 156ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info" for 10.0.2.2 at 2016-06-25 18:09:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2016-06-25 18:09:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (33.3ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/railties-4.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVotes (20160625181032)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160625181032"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+  [1m[35mTopic Load (1.7ms)[0m  SELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  UPDATE "topics" SET "title" = ?, "updated_at" = ? WHERE "topics"."id" = ?  [["title", "Edited in the console"], ["updated_at", "2016-06-25 18:31:48.115108"], ["id", 1]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mTopic Load (2.3ms)[0m  SELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1
+  [1m[36mTopic Load (2.2ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mUPDATE "topics" SET "title" = ?, "updated_at" = ? WHERE "topics"."id" = ?[0m  [["title", "Puppies"], ["updated_at", "2016-06-25 18:38:44.197148"], ["id", 1]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mTopic Load (2.0ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 18:41:26.567888"], ["updated_at", "2016-06-25 18:41:26.567888"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mTopic Load (1.7ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 18:42:17.748128"], ["updated_at", "2016-06-25 18:42:17.748128"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36mTopic Load (1.9ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mTopic Load (2.0ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 18:42:58.676488"], ["updated_at", "2016-06-25 18:42:58.676488"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36mTopic Load (2.2ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "topics" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-06-25 18:46:17.483748"], ["updated_at", "2016-06-25 18:46:17.483748"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  UPDATE "topics" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "topics"."id" = ?  [["title", "Kittens"], ["description", "why are kittens so cute?"], ["updated_at", "2016-06-25 18:47:29.345262"], ["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mTopic Load (1.9ms)[0m  SELECT "topics".* FROM "topics"
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 18:58:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 650ms (Views: 584.5ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 18:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:06:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.5ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 142ms (Views: 136.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:06:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"XLcUEFhm1TUI2ymFxeKuV3gk0QVVZTTSgdA90T5Fcs2jUp2aiT4mesyEdKT0rO7qg4jTmL7H5sRjJH+NHGpkRg==", "id"=>"1"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:06:29.257380"], ["updated_at", "2016-06-25 19:06:29.257380"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 56ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.9ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 137ms (Views: 132.4ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"72OOFLWjBTpnqbw9w39Eh8re9ccenVuqXcdClFeTUGcQhgeeZPv2daP24RzyMQQ6MXL3WvU/iby/MwDIdbxG7A==", "id"=>"1"}
+  [1m[36mTopic Load (0.8ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:06:29.792136"], ["updated_at", "2016-06-25 19:06:29.792136"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.9ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 131ms (Views: 126.6ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:06:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"Gz518SgiiXeDdgv8ehZkDvbn99XvwK0RHOJcxAMu2IPk2/x7+Xp6OEcpVt1LWCSzDUv1SARifwf+Fh6YIQHOCA==", "id"=>"2"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-06-25 19:06:31.325385"], ["updated_at", "2016-06-25 19:06:31.325385"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:06:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 151ms (Views: 146.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:20:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 143ms (Views: 137.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:20:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 131ms (Views: 126.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:21:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:22:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 114ms (Views: 108.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:22:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:22:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:22:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-a2f81a39a92eccba093319c176a3bcfbe13b3a04ac1c9a11a07467a5da7ad5ce.css?body=1" for 10.0.2.2 at 2016-06-25 19:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:24:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (2.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 465ms (Views: 441.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:24:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:25:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 120ms (Views: 116.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:25:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:25:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:25:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"sKfH+5SaCNpa627STzPEw1F2/6zHrfLt5iLjhCk+KABPQk5xRcL7lZ60M/N+fYR+qtr9MSwPIPsE1qHYCxE+iw==", "id"=>"1"}
+  [1m[35mTopic Load (1.6ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:25:08.534391"], ["updated_at", "2016-06-25 19:25:08.534391"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 25ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:25:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.7ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:25:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"aEjqO/noYgB1zblrgNPpulFvCqg1qq22uZaqtadXHWiXrWOxKLCRT7GS5EqxnakHqsMINd4If6BbYujphXgL4w==", "id"=>"2"}
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-06-25 19:25:09.436551"], ["updated_at", "2016-06-25 19:25:09.436551"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:25:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (2.8ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 183ms (Views: 158.1ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:27:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:27:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"TuFOS0CzOmaNsSLK5CxR5VhhBnnRkDH5I+EaSLmtrBOxBMfBkevJKUnuf+vVYhFYo80E5Doy4+/BFVgUm4K6mA==", "id"=>"1"}
+  [1m[36mTopic Load (1.5ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:27:42.291861"], ["updated_at", "2016-06-25 19:27:42.291861"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 23ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:27:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 123ms (Views: 118.5ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:27:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"PAn6xtNw6/hMPrkDd+rpt0qxeTwz7l8/zGRf05+GEjXD7HNMAigYt4hh5CJGpKkKsR17odhMjSkukB2PvakEvg==", "id"=>"1"}
+  [1m[35mTopic Load (1.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:27:43.562861"], ["updated_at", "2016-06-25 19:27:43.562861"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:27:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 130ms (Views: 125.9ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:27:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"t3ipuT5i1fVt82nqDUs4ue1LyxbYxhuFJBZsAnNQMuFInSAz7zomuqmsNMs8BXgEFufJizNkyZPG4i5eUX8kag==", "id"=>"2"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-06-25 19:27:44.179377"], ["updated_at", "2016-06-25 19:27:44.179377"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:27:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.4ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 139ms (Views: 135.2ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:27:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"dY97zIXHKhqauzPBGPd5nxfy8TfpKP4zbBxJhLKTLT6KavJGVJ/ZVV7kbuApuTki7F7zqgKKLCWO6AvYkLw7tQ==", "id"=>"2"}
+  [1m[35mTopic Load (1.5ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-06-25 19:27:45.273600"], ["updated_at", "2016-06-25 19:27:45.273600"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:27:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.6ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 138ms (Views: 132.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 174ms (Views: 147.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:28:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"XKC8BaXnq06qFgWBQAnfrW4pA4LNo/fF1S14iVNTLCOjRTWPdL9YAW5JWKBxR58QlYUBHyYBJdM32TrVcXw6qA==", "id"=>"2"}
+  [1m[35mTopic Load (1.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-06-25 19:28:03.322967"], ["updated_at", "2016-06-25 19:28:03.322967"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 27ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.0ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 126ms (Views: 122.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"JKcwM8hxl7GlQa6xjo07Wo/PbRBHWpnDH8EX7YJz3LzbQrm5GSlk/mEe85C/w3vndGNvjaz4S9X9NVWxoFzKNw==", "id"=>"1"}
+  [1m[36mTopic Load (1.4ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:28:05.539074"], ["updated_at", "2016-06-25 19:28:05.539074"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.9ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 120ms (Views: 116.2ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"mn4osGjTqMagKnKiPoz29DHcHN+iylbHjOdivkJbgtJlm6E6uYtbiWR1L4MPwrZJynAeQklohNFuEyDiYHSUWQ==", "id"=>"1"}
+  [1m[35mTopic Load (1.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:28:07.438547"], ["updated_at", "2016-06-25 19:28:07.438547"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 127ms (Views: 122.4ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zC6sPmdfUSAP7xCAvjSE7s0Vu088qWNpcuuu2EeI8aAzyyW0tgeib8uwTaGPesRTNrm50tcLsX+QH+yEZafnKw==", "id"=>"1"}
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:28:10.727221"], ["updated_at", "2016-06-25 19:28:10.727221"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 19ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.9ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 142ms (Views: 137.8ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zC6sPmdfUSAP7xCAvjSE7s0Vu088qWNpcuuu2EeI8aAzyyW0tgeib8uwTaGPesRTNrm50tcLsX+QH+yEZafnKw==", "id"=>"1"}
+  [1m[35mTopic Load (1.9ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:28:10.976756"], ["updated_at", "2016-06-25 19:28:10.976756"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 18ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.5ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 175ms (Views: 171.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zC6sPmdfUSAP7xCAvjSE7s0Vu088qWNpcuuu2EeI8aAzyyW0tgeib8uwTaGPesRTNrm50tcLsX+QH+yEZafnKw==", "id"=>"1"}
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.8ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:28:11.252258"], ["updated_at", "2016-06-25 19:28:11.252258"]]
+  [1m[35m (6.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 21ms (ActiveRecord: 11.6ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zC6sPmdfUSAP7xCAvjSE7s0Vu088qWNpcuuu2EeI8aAzyyW0tgeib8uwTaGPesRTNrm50tcLsX+QH+yEZafnKw==", "id"=>"1"}
+  [1m[36mTopic Load (1.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-06-25 19:28:11.319233"], ["updated_at", "2016-06-25 19:28:11.319233"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.4ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 145ms (Views: 140.3ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/topics/1/upvote" for 10.0.2.2 at 2016-06-25 19:28:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"xt7FahFtX0HitUWUMM1s0qHFYpQVZqr48b1wV4h4xwo5O0zgwDWsDibqGLUBgyxvWmlgCf7EeO4TSTILqlfRgQ==", "id"=>"1"}
+  [1m[35mTopic Load (1.0ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 1], ["created_at", "2016-06-25 19:28:12.406425"], ["updated_at", "2016-06-25 19:28:12.406425"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 133ms (Views: 128.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:28:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:28:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"G58qKkfh3mXv1+25tjqshcKNVXMys9EgBZ2U4iZPNfPkeqOglrktKiuIsJiHdOw4OSFX7tkRAzbnada+BGAjeA==", "id"=>"2"}
+  [1m[35mTopic Load (1.6ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-06-25 19:28:53.190834"], ["updated_at", "2016-06-25 19:28:53.190834"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:28:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 119ms (Views: 114.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:29:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.7ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 169ms (Views: 145.2ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:29:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"5etzR4plijJjT/M/lVf7h0xdrcqAh+gnYeRuX7gd3OgaDvrNWz15facQrh6kGbs6t/GvV2slOjGDECwDmjLKYw==", "id"=>"2"}
+  [1m[35mTopic Load (1.7ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:29:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 145ms (Views: 140.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:29:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"zxOljQ437AeoFGA3yP1qcyta4EzIHT1WoNvIIjvbE1Yw9iwH328fSGxLPRb5syrO0Pbi0SO/70BCL4p+GfQF3Q==", "id"=>"2"}
+  [1m[35mTopic Load (0.9ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:29:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 140ms (Views: 135.4ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:29:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"pAdIdNewjepXdiHAzUH8UpphFHeA2nvqFUz5kcVAXBdb4sH+Buh+pZMpfOH8D7zvYc0W6mt4qfz3uLvN529KnA==", "id"=>"2"}
+  [1m[35mTopic Load (1.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:29:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 138ms (Views: 133.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.8ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 179ms (Views: 155.9ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:29:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:29:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:29:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"gG1Fw0/PJKQ1dqT4SS0MFdd/Q3RnSXVxTxmGNjfnaeB/iMxJnpfX6/Ep+dl4Y0yoLNNB6Yzrp2et7cRqFch/aw==", "id"=>"2"}
+  [1m[36mTopic Load (1.5ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (1.5ms)[0m  SELECT "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `DELETE' for #<Vote::ActiveRecord_Associations_CollectionProxy:0xb5c706a4>):
+  app/controllers/topics_controller.rb:72:in `downvote'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:31:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (2.7ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 173ms (Views: 149.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 19:31:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 19:31:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:31:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"g2By0HENbuqP8kSZLlfkBl7hqyxvPnZwMzPoifvb4Cl8hftaoFWdpUutGbgfGaS7pU2psYScpGbRx6rV2fT2og==", "id"=>"2"}
+  [1m[35mTopic Load (1.8ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mVote Load (1.3ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.8ms)[0m  [1mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 21]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 30ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:31:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (5.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 136ms (Views: 127.5ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:31:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"XumDoIOdPW+u5Fr/kuc0jNkoZh2mlg5dW7HLIZStCx2hDAoqUsXOIGq7B96jqXQxIoRkgE003Eu5RYl9toIdlg==", "id"=>"2"}
+  [1m[35mTopic Load (1.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mVote Load (1.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 13]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:31:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.9ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 125ms (Views: 121.0ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:36:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"laDIz5kBYGElNRu0O/brDOzjqmT6W5nd8WxXPlFEWOhqRUFFSFmTLuFqRpUKuKuxF0+o+RH5S8sTmBVic2tOYw==", "id"=>"2"}
+  [1m[35mTopic Load (1.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mVote Load (1.5ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mDELETE FROM "votes" WHERE "votes"."id" = ?[0m  [["id", 12]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:36:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 130ms (Views: 126.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 19:38:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.6ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 156ms (Views: 151.7ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:38:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"uoF4qt5CYhqjRATFdiANxZnE3K+d6UuWFgZ8nY8vyf5FZPEgDxqRVWcbWeRHbk14YmjeMnZLmYD08j7BrQDfdQ==", "id"=>"2"}
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (1.2ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = ?  [["id", 11]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 17ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:38:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 137ms (Views: 132.1ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:38:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"o/c0HoVYrXo402eDueUf/ORJ3H+iQ5/1OE7VEHy+kcxcEr2UVABeNfyMOqKIq19BH+Xe4knhTePaupdMXpGHRw==", "id"=>"2"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (1.5ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = ?  [["id", 8]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:38:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 135ms (Views: 129.6ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:38:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"RnYEbSju0guQQTyZuWG66lCYYwSwPHxl/iEONeaxcAe5k43n+bYhRFQeYbiIL/pXqzRhmVuernMc1UxpxJ5mjA==", "id"=>"2"}
+  [1m[36mTopic Load (1.4ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (1.1ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = ?  [["id", 6]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:38:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 128ms (Views: 122.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/topics/2/downvote" for 10.0.2.2 at 2016-06-25 19:38:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"cLdXhk3Kxi9YgM/7uJAQHEiclrnrpHFVxswI8vFJNbGPUt4MnJI1YJzfktqJ3lChszCUJAAGo0MkOEqu02YjOg==", "id"=>"2"}
+  [1m[36mTopic Load (1.0ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (1.5ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.5ms)
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/topics_controller.rb:72:in `downvote'
+
+
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /home/vagrant/.gem/ruby/2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+
+
+Started POST "/topics/2/upvote" for 10.0.2.2 at 2016-06-25 19:39:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"cLdXhk3Kxi9YgM/7uJAQHEiclrnrpHFVxswI8vFJNbGPUt4MnJI1YJzfktqJ3lChszCUJAAGo0MkOEqu02YjOg==", "id"=>"2"}
+  [1m[36mTopic Load (1.9ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-06-25 19:39:40.784110"], ["updated_at", "2016-06-25 19:39:40.784110"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 17ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 19:39:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 132ms (Views: 128.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/topics/1" for 10.0.2.2 at 2016-06-25 19:39:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (1.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 199ms (Views: 196.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/topics/2" for 10.0.2.2 at 2016-06-25 19:39:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTopic Load (1.4ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered topics/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 124ms (Views: 120.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 147ms (Views: 143.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-4dd0bb07b4ff78b9f0ec816237f71aab97af1ae1df27afdb68252531f406005c.css?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2016-06-25 20:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 10.0.2.2 at 2016-06-25 20:08:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  Rendered topics/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 130ms (Views: 125.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 20:08:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (36.1ms)
+  Rendered topics/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 198ms (Views: 196.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for 10.0.2.2 at 2016-06-25 20:08:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s8z9/uhms7Ph6IqkGgRNmCsy+EPZ8pwQEJVCVzreJWpMKXR0OT5A/CW314UrSg0l0J763jJQTgbyYQALGPEz4Q==", "topic"=>{"title"=>"ruby", "description"=>"how awesome is ruby"}, "commit"=>"Create Topic"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ruby"], ["description", "how awesome is ruby"], ["created_at", "2016-06-25 20:08:20.922717"], ["updated_at", "2016-06-25 20:08:20.922717"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 13ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.5ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  Rendered topics/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 145ms (Views: 139.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/topics/3/upvote" for 10.0.2.2 at 2016-06-25 20:08:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"d5Vyp66dHA7q7rmilXcm13nvOLE4MQoPMhmlEzBZ7ZeIcPstf8XvQS6x5IOkOWZqgkM6LNOT2BnQ7edPEnb7HA==", "id"=>"3"}
+  [1m[36mTopic Load (1.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-06-25 20:08:23.740814"], ["updated_at", "2016-06-25 20:08:23.740814"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.5ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  Rendered topics/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 142ms (Views: 136.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/topics/new" for 10.0.2.2 at 2016-06-25 20:08:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (1.7ms)
+  Rendered topics/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 152ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for 10.0.2.2 at 2016-06-25 20:08:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTF4F9ZSfesPhqUNNr7wmekvBl3FbgVUj2/W6soNrz6m1PGdBwqOpMvZ+CwH8LAkEoMEwC7M10Jtm5S26CK5tQ==", "topic"=>{"title"=>"cheese", "description"=>"yes..."}, "commit"=>"Create Topic"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "cheese"], ["description", "yes..."], ["created_at", "2016-06-25 20:08:37.864830"], ["updated_at", "2016-06-25 20:08:37.864830"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 13ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.6ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 133ms (Views: 124.6ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/topics/4/upvote" for 10.0.2.2 at 2016-06-25 20:08:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"c6s4d5XOO/7gKhWcY9FuI60cL35zDgIl8+n13yRTqeqMTrH9RJbIsSR1SL1Sny6eVrAt45is0DMRHbeDBny/YQ==", "id"=>"4"}
+  [1m[36mTopic Load (1.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-06-25 20:08:41.681784"], ["updated_at", "2016-06-25 20:08:41.681784"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 145ms (Views: 138.1ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/topics/4/upvote" for 10.0.2.2 at 2016-06-25 20:08:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"N+pgAjWaPmUzOho+/C6qS2Hh7F2917YnnJdZSghl8HLID+mI5MLNKvdlRx/NYOr2mk3uwFZ1ZDF+YxsWKkrm+Q==", "id"=>"4"}
+  [1m[35mTopic Load (1.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-06-25 20:08:47.588861"], ["updated_at", "2016-06-25 20:08:47.588861"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 134ms (Views: 126.9ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/topics/4/upvote" for 10.0.2.2 at 2016-06-25 20:08:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"NlZhEoNbKfLlisOr0H833jl/OxZ49rN6wt7luK+4wEjJs+iYUgPavSHVnorhMXdjwtM5i5NUYWwgKqfkjZfWww==", "id"=>"4"}
+  [1m[36mTopic Load (1.6ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-06-25 20:08:48.405022"], ["updated_at", "2016-06-25 20:08:48.405022"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 14ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.7ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (3.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (5.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 144ms (Views: 129.5ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/topics/4/upvote" for 10.0.2.2 at 2016-06-25 20:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"rsDapAa8dQtRv8cNsRgxAlV9yUajK1MLuRW/PnDk3j5RJVMu1+SGRJXgmiyAVnG/rtHL20iJgR1b4f1iUsvItQ==", "id"=>"4"}
+  [1m[35mTopic Load (1.6ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-06-25 20:08:49.394973"], ["updated_at", "2016-06-25 20:08:49.394973"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.4ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 149ms (Views: 141.7ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/topics/4/upvote" for 10.0.2.2 at 2016-06-25 20:08:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"vO1/fY4U8PkVOynElUVXqH74qnk4rX503eBdPm9oSQtDCPb3X0wDttFkdOWkCxcVhVSo5NMPrGI/FB9iTUdfgA==", "id"=>"4"}
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-06-25 20:08:50.417827"], ["updated_at", "2016-06-25 20:08:50.417827"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (1.8ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 129ms (Views: 120.7ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/topics/3/upvote" for 10.0.2.2 at 2016-06-25 20:08:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"1iTUf8yyo5ckv8E61hU8UHdunLqLKG+uucEvazu9isYpwV31HepQ2ODgnBvnW3ztjMKeJ2CKvbhbNW03GZKcTQ==", "id"=>"3"}
+  [1m[35mTopic Load (1.6ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-06-25 20:08:53.728661"], ["updated_at", "2016-06-25 20:08:53.728661"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 15ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/topics" for 10.0.2.2 at 2016-06-25 20:08:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (1.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 147ms (Views: 139.1ms | ActiveRecord: 6.7ms)
