@@ -2236,3 +2236,2469 @@ Processing by TopicsController#index as HTML
   [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
   Rendered topics/index.html.erb within layouts/application (19.9ms)
 Completed 200 OK in 147ms (Views: 139.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 13:14:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 730ms (Views: 715.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 13:14:41 -0400
+
+
+Started POST "/topics/1/downvote" for ::1 at 2016-07-10 13:14:43 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"76PbX1ANC3Hpii92GDUGXpV+dvMgWGDF6z8cEE03lD5bcuskEX4Rrfrdu9jgLoXZPKoA7cQxq7i5iy7MAbhLwQ==", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVote Load (0.2ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = ?  [["id", 20]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 28ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:14:43 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 13:14:44 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"sTk9/ySliO6T1TFzHJsgfP+djrVTtJoVFpHtSx6UWbcF6A2EZdaSMoCCpd3kgKP7Vkn4q7fdUWhEJd+XUhuGSA==", "id"=>"2"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (0.1ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "votes" WHERE "votes"."id" = ?  [["id", 22]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:14:44 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 13:14:45 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"BlXgCviqSSdwY04KK7/YxGle1GjSQoTCe5GWyCxTAl6yhNBxudlT+2M02qTTpFtDwIqidjYrT78pJaQUYNzdoQ==", "id"=>"2"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mVote Load (0.1ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."topic_id" = ?  ORDER BY "votes"."id" DESC LIMIT 1  [["topic_id", 2]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/topics_controller.rb:72:in `downvote'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.6ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 13:14:53 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/topics/2/upvote" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"dPBdMzM2lb9gUGM2miHHFn4E4U9qaNs/9kPSlsj9l3vAIW1IckWPY3MH95hiOkSR19CXUY4BEEKk9+BKhHJIhA==", "id"=>"2"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 17:14:59.052176"], ["updated_at", "2016-07-10 17:14:59.052176"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 17ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/2/upvote" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"x+eO4wqol07XgGmwf9ljnxYpbdnJiqSw4JMz32YTzFRzNr6YS9uNksTX/R6HwuAYv/0bxy3jb82yJwEDKpwTqw==", "id"=>"2"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 17:14:59.353105"], ["updated_at", "2016-07-10 17:14:59.353105"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/2/upvote" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"KcUWPPQnjHl+Q1IxMO3wmN/3TsqLAozEJn7+q5bcoWidFCZHtVSWpW0Uxp/I9nMfdiM41G9rR7l0ysx32lN+lw==", "id"=>"2"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 17:14:59.523542"], ["updated_at", "2016-07-10 17:14:59.523542"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:14:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/2/upvote" for ::1 at 2016-07-10 13:15:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"dh4jbYSWBVqaDrh7xU/SUDIoMe5NOQaCrNLP1aVoud7CzxMWxeUfholZLNU9VFHXm/xH8KlQzf/+Zv0J6edmIQ==", "id"=>"2"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 17:15:00.947829"], ["updated_at", "2016-07-10 17:15:00.947829"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:15:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/topics/new" for ::1 at 2016-07-10 13:19:40 -0400
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (15.3ms)
+  Rendered topics/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 13:19:46 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:25:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `votes' for #<Topic:0x007f808d160908>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= link_to topic.title, topic_path(topic) %></td>
+    19:         <td><%= pluralize(topic.votes.count, "vote") %></td>
+    20:         <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+    21:         <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+    22:         <!-- <td><%= link_to 'Show', topic %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__2805894069285166734_70095049872600'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__2805894069285166734_70095049872600'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:27:11 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `votes' for #<Topic:0x007f808d0c3a90>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= link_to topic.title, topic_path(topic) %></td>
+    19:         <td><%= topic.votes.integer %></td>
+    20:         <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+    21:         <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+    22:         <!-- <td><%= link_to 'Show', topic %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__2805894069285166734_70095049530940'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__2805894069285166734_70095049530940'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:27:56 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `votes' for #<Topic:0x007f808d068758>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= link_to topic.title, topic_path(topic) %></td>
+    19:         <td><%= topic.votes.count %></td>
+    20:         <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+    21:         <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+    22:         <!-- <td><%= link_to 'Show', topic %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__2805894069285166734_70095049347120'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__2805894069285166734_70095049347120'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.9ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDownVotes (20160710183011)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "down_votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "topic_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160710183011"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:35:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  Rendered topics/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `votes' for #<Topic:0x007f9710eda270>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= link_to topic.title, topic_path(topic) %></td>
+    19:         <td><%= pluralize(topic.votes.count - topic.down_votes.count, "vote") %></td>
+    20:         <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+    21:         <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+    22:         <!-- <td><%= link_to 'Show', topic %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__258216176587728115_70143414839860'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__258216176587728115_70143414839860'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.6ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 14:35:57 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  Rendered topics/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `votes' for #<Topic:0x007f9711901a50>):
+    16:     <% @topics.each do |topic| %>
+    17:       <tr>
+    18:         <td><%= link_to topic.title, topic_path(topic) %></td>
+    19:         <td><%= pluralize(topic.votes.count - topic.down_votes.count, "vote") %></td>
+    20:         <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+    21:         <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+    22:         <!-- <td><%= link_to 'Show', topic %></td>
+  app/views/topics/index.html.erb:19:in `block in _app_views_topics_index_html_erb__258216176587728115_70143414839860'
+  app/views/topics/index.html.erb:16:in `_app_views_topics_index_html_erb__258216176587728115_70143414839860'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "topics"[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics"  ORDER BY "topics"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 1], ["created_at", "2016-07-10 18:39:32.194255"], ["updated_at", "2016-07-10 18:39:32.194255"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-07-10 14:39:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 281ms (Views: 266.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:39:53 -0400
+
+
+Started POST "/topics/1/downvote" for ::1 at 2016-07-10 14:39:55 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"FjCTGSzqeb8LVXn6p66FtpGoWEFNkew0lgr794pEd9Wi4aNibZljYxgC7VRftQYxOHwuX6n4J0nEvskrxsuoKg==", "id"=>"1"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `downvote' for #<Topic:0x007fdc717d3200>
+Did you mean?  down_votes):
+  app/controllers/topics_controller.rb:72:in `downvote'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.3ms)
+
+
+Started POST "/topics/1/downvote" for ::1 at 2016-07-10 14:40:14 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"FjCTGSzqeb8LVXn6p66FtpGoWEFNkew0lgr794pEd9Wi4aNibZljYxgC7VRftQYxOHwuX6n4J0nEvskrxsuoKg==", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `down_vote' for #<Topic:0x007fdc720a1558>
+Did you mean?  down_votes
+               down_votes=):
+  app/controllers/topics_controller.rb:72:in `downvote'
+
+
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.4ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/luyuanxing/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/" for ::1 at 2016-07-10 14:40:33 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 57ms (Views: 47.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:40:33 -0400
+
+
+Started POST "/topics/2/upvote" for ::1 at 2016-07-10 14:40:34 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"QIh8mHYCEgVuY8xD5KJ+hWFhj/gfcqtAxDGlqvecvFn0WUzjN3EI2X00WO0cuf0CyLX55vsbYD2WhZd2uxNjpg==", "id"=>"2"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 18:40:34.699635"], ["updated_at", "2016-07-10 18:40:34.699635"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 16ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:34 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:40:35 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"Aru/+8rFqsgrkpqngMjc+Exu5GyY+FF3YHcSWGulj0W2ao+Ai7awFDjFDgl4019/5bqScnyRmgoywyCEJypQug==", "id"=>"2"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 18:40:35.801598"], ["updated_at", "2016-07-10 18:40:35.801598"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:35 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:40:36 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"RcHapNu4RPpdrGuxpvrPRDIN31ob7tLVUzGr9UGN2sXxEOrfmsteJk77/x9e4UzDm9mpRP+HGagBhZkpDQIFOg==", "id"=>"3"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:40:36.919533"], ["updated_at", "2016-07-10 18:40:36.919533"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:36 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:37 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"pDvJWKgS8Gbj8/Sh8sDigTRmeRDa2vUVRcXKXFEhzGIQ6vkj6WHquvCkYA8K22EGnbIPDj6zPmgXcfiAHa4TnQ==", "id"=>"3"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:40:37.866658"], ["updated_at", "2016-07-10 18:40:37.866658"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:37 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:38 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"25DGVPl47lSX00QfcuQ0QIqriQiQ47iRb/STbGS8w9hvQfYvuAv0iISE0LGK/7fHI3//FnSKc+w9QKGwKDMcJw==", "id"=>"3"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:40:38.444024"], ["updated_at", "2016-07-10 18:40:38.444024"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:38 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:39 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"X6rpKCOklaSTB4TW1JvIBXNcpZjCzyCViVhs+FXmNj/re9lTYtePeIBQEHgsgEuC2ojThiam6+jb7F4kGWnpwA==", "id"=>"3"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:40:39.011809"], ["updated_at", "2016-07-10 18:40:39.011809"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:39 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:39 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"02Bd+KWqspcwc1+ZkbVcY8K3N4SiFAkbuHAHy236BA5nsW2D5NmoSyMkyzdprt/ka2NBmkZ9wmbqxDUXIXXb8Q==", "id"=>"3"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:40:39.671569"], ["updated_at", "2016-07-10 18:40:39.671569"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:39 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:40 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"5rQKrj5DoJI7kwjbbCyhTlSgwVr7UaI+xg2mGX8NmvFSZTrVfzC6TijEnHWUNyLJ/XS3RB84aUOUuZTFM4JFDg==", "id"=>"3"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:40:40.342024"], ["updated_at", "2016-07-10 18:40:40.342024"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:40 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/topics/3/downvote" for ::1 at 2016-07-10 14:40:40 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"YBfPC/nnh8JJYgEGD5ItKXo2dhOurYs9qVji8EM/BPjUxv9wuJSdHlo1laj3ia6u0+IADUrEQED77NAsD7DbBw==", "id"=>"3"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:40:40.954325"], ["updated_at", "2016-07-10 18:40:40.954325"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:40:40 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:41:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zGHxGOtbQib3PbPm3PMzHTRynOfyLSfmYACs7lLwFdx4sMFjqihY+uRqJ0gk6LCanabq+RZE7JsytJ4yHn/KIw==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:00.703574"], ["updated_at", "2016-07-10 18:41:00.703574"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 26ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:01 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"50+LZdP1a94YrdVIFkXLX5RRSFONpZenkL6QdSYsdLJTnrsekoZxAgv6QebuXkjYPYU+TWnMXNrCCqKpaqOrTQ==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:01.748786"], ["updated_at", "2016-07-10 18:41:01.748786"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:01 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:02 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"b6uIjd1HYQ/G1ul9212kYS68Q0//GFL+x36JcLH/E7rberj2nDR709WBfdMjRifmh2g1URtxmYOVyrus/XDMRQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:02.346911"], ["updated_at", "2016-07-10 18:41:02.346911"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:02 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"Wh9hBZPZwdeA+kWA2Y4+1tCCpIdQG7itNSWAuumYFonuzlF+0qrbC5Ot0S4hlb1ReVbSmbRyc9BnkbJmpRfJdg==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:02.826831"], ["updated_at", "2016-07-10 18:41:02.826831"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:03 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"vhnVQ2KIG7o68xqh2KznISd9ZjBDvjhbtYGUbwre4UQKyOU4I/sBZimkjg8gt2SmjqkQLqfX8ybnNaazRlE+uw==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:03.325042"], ["updated_at", "2016-07-10 18:41:03.325042"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:03 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:03 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"CwB9gHtyFKpEPnOTkhXb1rn1MzZ3xK4YzC5XjjV84JO/0U37OgEOdldp5z1qDlhRECFFKJOtZWWemmVSefM/bA==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:03.779699"], ["updated_at", "2016-07-10 18:41:03.779699"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:03 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:04 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"eoJAUApQkd9ySc1/FccBkNhsIZshsbCiOEAz6C9r0ObOU3ArSyOLA2EeWdHt3IIXcbhXhcXYe99q9AE0Y+QPGQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:04.214001"], ["updated_at", "2016-07-10 18:41:04.214001"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:04 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:04 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"oVsaC4DAPuBVsivSraDgYWjwsQm04sOlWQvfWCHExQYViipwwbMkPEblv3xVu2PmwSTHF1CLCNgLv+2EbUsa+Q==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:04.743141"], ["updated_at", "2016-07-10 18:41:04.743141"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:04 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:05 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"3a7/eza1yXiZGx4nCxAaYVzWuLKK6lNR8n42vaocM1dpf88Ad8bTpIpMionzC5nm9QLOrG6DmCygygRh5pPsqA==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:05.265670"], ["updated_at", "2016-07-10 18:41:05.265670"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:05 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:05 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"9T8D7TCM8tUvsbRdOkcG54CpxzfJc/b4yKSIT3nRXJlB7jOWcf/oCTzmIPPCXIVgKX2xKS0aPYWaELqTNV6DZg==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:05.843861"], ["updated_at", "2016-07-10 18:41:05.843861"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:05 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:06 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"sWUuCDmNlIYr+V3z38fczVr+jGvE9T8E1A4KUBoJs94FtB5zeP6OWjiuyV0n3F9K8yr6dSCc9HmGujiMVoZsIQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:41:06.362471"], ["updated_at", "2016-07-10 18:41:06.362471"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/4/downvote" for ::1 at 2016-07-10 14:41:06 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"M2mK+fgc8tvgTZhjQ7qxwa2Q9/zTsxc25CFSFjRTsdeHuLqCuW/oB/MaDM27oTJGBESB4jfa3Eu2lWDKeNxuKA==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:41:06.979207"], ["updated_at", "2016-07-10 18:41:06.979207"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:56 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"YW+cGacn8seQi6TD5u+ismLTefc1RPG6DunWqD0IC73Vvqxi5lToG4PcMG0e9CE1ywcP6dEtOsdcXeR0cYfUQg==", "id"=>"2"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 18:41:56.827412"], ["updated_at", "2016-07-10 18:41:56.827412"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:56 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"Hu1Mhr2ausOHe30Eoe2kXjCyKgUGPvYxJtCEG1FvJOiqPHz9/OmgH5Qs6apZ9ifZmWZcG+JXPUx0ZLbHHeD7Fw==", "id"=>"2"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 18:41:57.113929"], ["updated_at", "2016-07-10 18:41:57.113929"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"MeGYUHYfOVmpvxw1TJxUEhbotTufBtt9sJRXLSanKYSFMKgrN2wjhbroiJu0h9eVvzzDJXtvEADiIGXxaij2ew==", "id"=>"2"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 18:41:57.404555"], ["updated_at", "2016-07-10 18:41:57.404555"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"OteZlT2CzHwDaV/c7zQ8Mv1HAldNWO6zWgT2LrTSbiSOBqnufPHWoBA+y3IXL7+1VJN0SakxJc4IsMTy+F2x2w==", "id"=>"2"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 18:41:57.686197"], ["updated_at", "2016-07-10 18:41:57.686197"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:57 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.4ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"3+wS42e3QjR2TvPDFjLUDSpTiF7x7P1LSQjl2VxlM/NrPSKYJsRY6GUZZ23uKVeKg4f+QBWFNjYbvNcFEOrsDA==", "id"=>"2"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 18:41:58.007234"], ["updated_at", "2016-07-10 18:41:58.007234"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"WcbCz57W43Osc41mpitJpY7I6mNr40HnuUrfMQ/JdjntF/K036X5r78kGcheMMoiJxycfY+Kiprr/u3tQ0apxg==", "id"=>"2"}
+  [1m[35mTopic Load (0.8ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 18:41:58.188202"], ["updated_at", "2016-07-10 18:41:58.188202"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"7MX/YmGdel/gZXxypvQWyV2PYxWNaTthW8BgNnQCYNNYFM8ZIO5gg/My6Nxe75VO9FsVC2kA8BwJdFLqOI2/LA==", "id"=>"2"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 2], ["created_at", "2016-07-10 18:41:58.534844"], ["updated_at", "2016-07-10 18:41:58.534844"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 13ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/topics/2/downvote" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"jjK6o89BUs2ktXi8MvhoHxoRVs8bklH5MuFOFGm9EUo644rYjjJIEbfi7BLK4+uYs8Ug0f/7moRgVXzIJTLOtQ==", "id"=>"2"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 2], ["created_at", "2016-07-10 18:41:58.712868"], ["updated_at", "2016-07-10 18:41:58.712868"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:41:58 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:41:59 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"Exb/7NvQWanRKnEzMufT8pNrV7QE88DvzkbAsc8WxCCnx8+XmqNDdcJ95Z3K/FB1Or8hquCaC5Kc8vJtg5kb3w==", "id"=>"3"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:41:59.994591"], ["updated_at", "2016-07-10 18:41:59.994591"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"tYiDWSCO3I8j/2kQjqn3/1O/LxXIGIvCjbM2ad+Z1/wBWbMiYf3GUzCo/b52snR4+mtZCyxxQL/fBwS1kxYIAw==", "id"=>"3"}
+  [1m[35mTopic Load (0.3ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:42:00.183562"], ["updated_at", "2016-07-10 18:42:00.183562"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.4ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"J6Q9M7ytXR1c1lIIWiBErMbdjvkDfD8Ca+PDdCzyO6qTdQ1I/d5HwU+BxqaiO8crbwn45+cV9H85V/GoYH3kVQ==", "id"=>"3"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:42:00.516191"], ["updated_at", "2016-07-10 18:42:00.516191"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"vcsuFF0cU6UNc7zwPJSJ6hS+YifA7NC1L7e8t0OLR9wJGh5vHG9JeR4kKF7EjwptvWoUOSSFG8h9A45rDwSYIw==", "id"=>"3"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:42:00.696320"], ["updated_at", "2016-07-10 18:42:00.696320"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.6ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zteuHX2AxmO+3Dhbv81EAchrUXAyizmsUao6vNNJe2J6Bp5mPPPcv62LrPVH1seGYb8nbtbi8tEDHghgn8aknQ==", "id"=>"3"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:42:00.904775"], ["updated_at", "2016-07-10 18:42:00.904775"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:01 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"DNwLDtJq0eRk3+fIk9W6AIjnmnjocOVW2NvFTeZu1KG4DTt1kxnLOHeIc2ZrzjmHITPsZgwZLiuKb/eRquELXg==", "id"=>"3"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 3], ["created_at", "2016-07-10 18:42:01.563014"], ["updated_at", "2016-07-10 18:42:01.563014"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:01 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"gVwWpya0b5U0tP8CzKgou/DJHhsaPe531Ju+Huz36eU1jSbcZ8d1SSfja6w0s6s8WR1oBf5UJQqGL4zCoHg2Gg==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:02.004695"], ["updated_at", "2016-07-10 18:42:02.004695"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"O0yu0gcc8RPLCcfWJYJQR1ljbpmwG/p0ArQveqSe1VePnZ6pRm/rz9heU3jdmdPA8LcYh1RyMQlQAB2m6BEKqA==", "id"=>"4"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:02.248729"], ["updated_at", "2016-07-10 18:42:02.248729"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"ZL1+uScjnRygzj6g2Km3nX8Ecv9vo/mchi0hz4c2hOHQbE7CZlCHwLOZqg4gsjQa1tAE4YvKMuHUmRMTy7lbHg==", "id"=>"4"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:02.466866"], ["updated_at", "2016-07-10 18:42:02.466866"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"JPNyJd5pb5u2WskHjbb06bgm5voj/+4Z02U/4Qs0mluQIkJenxp1R6UNXal1rXduEfKQ5MeWJWSB0Q09R7tFpA==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:02.844446"], ["updated_at", "2016-07-10 18:42:02.844446"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:02 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:03 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"GXWIA0lixcEfoHI8iE0CUUIcwdiLi1ZfEHsQT6k9gzqtpLh4CBHfHQz35pJwVoHW68i3xm/inSJCzyKT5bJcxQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:03.090821"], ["updated_at", "2016-07-10 18:42:03.090821"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:03 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:03 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"PVc/HnnC9rROMdnHhVBX9vKVjrZE4amNVYxaj7eXLfqJhg9lOLHsaF1mTWl9S9RxW0H4qKCIYvAHOGhT+xjyBQ==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:03.927376"], ["updated_at", "2016-07-10 18:42:03.927376"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:03 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"nehZG00vB2k5OHcM3WbuVLivgATQEbJQVhee2h/OBS0pOWlgDFwdtSpv46IlfW3TEXv2GjR4eS0Eo6wGU0Ha0g==", "id"=>"4"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:04.135893"], ["updated_at", "2016-07-10 18:42:04.135893"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"QSvmGkbicv16NuJkfc24XRVqJf7ZvqJzKIinGdKqs8v1+tZhB5FoIWlhdsqF1jvavL5T4D3XaQ56PJXFniVsNA==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:04.768710"], ["updated_at", "2016-07-10 18:42:04.768710"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"sPouzpEJMt72KygYTpD/jKlawXRqfGc8Jyfjf1xJ2TYEKx610HooAuV8vLa2i3wLAI63ao4VrEF1k9GjEMYGyQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:04.976443"], ["updated_at", "2016-07-10 18:42:04.976443"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:04 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.5ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"0bWXZLiWSrBhnlkgBycsP5g0vajNxUY+RUnB0yWLeeNlZKcf+eVQbHLJzY7/PK+4MeDLtimsjUMX/fMPaQSmHA==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:05.361130"], ["updated_at", "2016-07-10 18:42:05.361130"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 5ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"vw/vkd45B2SO9V+nPuJlpTvln2wGsdtQeBPLuQbGRCAL3t/qn0oduJ2iywnG+eYikjHpcuLYEC0qp/llSkmb3w==", "id"=>"4"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:05.576430"], ["updated_at", "2016-07-10 18:42:05.576430"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"qRcr6lljjwVGMHGzs9Gd6/GQEZHToHMl76ubQt88qWodxhuRGBCV2VVn5R1Lyh5sWERnjzfJuFi9H6mek7N2lQ==", "id"=>"4"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:05.815781"], ["updated_at", "2016-07-10 18:42:05.815781"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:05 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"uj2/MZvGcWP8LGJaKnAak1s8gO5PJ623hXKYjExVe/YO7I9K2rVrv+979vTSa5kU8uj28KtOZsrXxqpQANqkCQ==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:06.034967"], ["updated_at", "2016-07-10 18:42:06.034967"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.4ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"cTCYsSRMOqkf16C7b6I/h34i4TE5/mOxFooQyI8kvKzF4ajKZT8gdQyANBWXubwA1/aXL92XqMxEPiIUw6tjUw==", "id"=>"4"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:06.274871"], ["updated_at", "2016-07-10 18:42:06.274871"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"sYUaMnIiVMjqgeGuAEDPwt4CdDn6vwXEHVytcaPcEAgFVCpJM1FOFPnWdQD4W0xFd9YCJx7WzrlP6J+t71PP9w==", "id"=>"4"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 4], ["created_at", "2016-07-10 18:42:06.694386"], ["updated_at", "2016-07-10 18:42:06.694386"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/4/upvote" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"WuyeyYtXje9gqA0KU3jDT3G5reV5PwVlhiPjBEsJ8YruPa6yyiSXM3P/maSrY0DI2G3b+51WzhjUl9HYB4YudQ==", "id"=>"4"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 4], ["created_at", "2016-07-10 18:42:06.962514"], ["updated_at", "2016-07-10 18:42:06.962514"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:06 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/topics/3/upvote" for ::1 at 2016-07-10 14:42:08 -0400
+Processing by TopicsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"LSozCfIACZjWq6ZA+NP1gjcfaHH1FjkC5WpnRa3zXBSZ+wNys3MTRMX8Mu4AyHYFnssebxF/8n+33lWZ4XyD6w==", "id"=>"3"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 3], ["created_at", "2016-07-10 18:42:08.889122"], ["updated_at", "2016-07-10 18:42:08.889122"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:08 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  Rendered topics/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/topics/new" for ::1 at 2016-07-10 14:42:10 -0400
+Processing by TopicsController#new as HTML
+  Rendered topics/_form.html.erb (10.6ms)
+  Rendered topics/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for ::1 at 2016-07-10 14:42:16 -0400
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/oIQZ8OcltqivbRNm454WJeMJDJOOcTaz7wfRshaxsVKUyAcgu+MBrHqIONjlfvfPlhSLKpQD6edCC2ahNUZOg==", "topic"=>{"title"=>"rails magic", "description"=>""}, "commit"=>"Create Topic"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "topics" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "rails magic"], ["description", ""], ["created_at", "2016-07-10 18:42:16.952198"], ["updated_at", "2016-07-10 18:42:16.952198"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:42:16 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.6ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:43:54 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:43:54 -0400
+
+
+Started POST "/topics/5/downvote" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"92DFLQqc+GnrVpvpkdBmJVMCScDIVI7oVt/iieJQFHBDsfVWS+/itfgBD0dpy+Wi+tY/3iw9RZUEa9BVrt/Ljw==", "id"=>"5"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 5], ["created_at", "2016-07-10 18:43:59.316431"], ["updated_at", "2016-07-10 18:43:59.316431"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/topics/5/downvote" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"0VFvykniUtjCKERji38VJeVwX5LJ8HJ3qw/StBjDl0RlgF+xCJFIBNF/0M1zZJaiTKQpjC2ZuQr5u+BoVExIuw==", "id"=>"5"}
+  [1m[35mTopic Load (0.4ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 5], ["created_at", "2016-07-10 18:43:59.672589"], ["updated_at", "2016-07-10 18:43:59.672589"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics/5/downvote" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"qkMAbboG97TNfCXtQuSXPi40YNhIMjgeXqXYeooGuBUekjAW+3XtaN4rsUO6/xS5h+AWxqxb82MMEeqmxoln6g==", "id"=>"5"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["topic_id", 5], ["created_at", "2016-07-10 18:43:59.922887"], ["updated_at", "2016-07-10 18:43:59.922887"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:43:59 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/topics/5/downvote" for ::1 at 2016-07-10 14:44:00 -0400
+Processing by TopicsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"p9hV/qZxnypUUxZavdX3Y6SEv3NSHl0uia5u/mDpwx0TCWWF5wKF9kcEgvRFznTkDVDJbbZ3llPbGlwiLGYc4g==", "id"=>"5"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "down_votes" ("topic_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["topic_id", 5], ["created_at", "2016-07-10 18:44:00.606197"], ["updated_at", "2016-07-10 18:44:00.606197"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:44:00 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:44:29 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:44:30 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:44:38 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:44:38 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:44:52 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:44:52 -0400
+
+
+Started GET "/topics/1" for ::1 at 2016-07-10 14:45:19 -0400
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/topics/1" for ::1 at 2016-07-10 14:45:22 -0400
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/topics/1/edit" for ::1 at 2016-07-10 14:45:24 -0400
+Processing by TopicsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/_form.html.erb (1.7ms)
+  Rendered topics/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:45:49 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:45:50 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:46:13 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:46:13 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:46:30 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:46:31 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:46:41 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:46:41 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:47:22 -0400
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?  [["topic_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:47:23 -0400
+
+
+Started GET "/topics" for ::1 at 2016-07-10 14:47:31 -0400
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."topic_id" = ?[0m  [["topic_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "down_votes" WHERE "down_votes"."topic_id" = ?  [["topic_id", 5]]
+  Rendered topics/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.self-8de6e5ae676fdb0532070a9fcb897a1fc3be6c8ed7b52aac1007f2b4e572b8e9.css?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/topics.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/topics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 14:47:31 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 14:47:31 -0400

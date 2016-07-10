@@ -1,32 +1,43 @@
-<p id="notice"><%= notice %></p>
+<head>
+    <style>
+      table, td {
+          border: 1px solid black;
+      }
+    </style>
 
-<h1>Listing Topics</h1>
+</head>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>String</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<body>
+  <p id="notice"><%= notice %></p>
 
-  <tbody>
-    <img src="http://i.imgur.com/MQHYB.jpg" height="100" />
-    <% @topics.each do |topic| %>
+  <h1>Welcome to Suggestotron</h1><br>
+
+  <table>
+    <thead>
       <tr>
-        <td><%= link_to topic.title, topic_path(topic) %></td>
-        <td><%= pluralize(topic.votes.count, "vote") %></td>
-        <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
-        <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
-        <!-- <td><%= link_to 'Show', topic %></td>
-        <td><%= link_to 'Edit', edit_topic_path(topic) %></td> -->
-        <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th>String</th>
+        <th colspan="7"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <img src="http://i.imgur.com/MQHYB.jpg" height="100" /><br><br>
+      <% @topics.each do |topic| %>
+        <tr>
+          <td><%= link_to topic.title, topic_path(topic) %></td>
+          <td><%= pluralize(topic.votes.count - topic.down_votes.count, "vote") %></td>
+          <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
+          <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
+          <td><%= link_to 'Show', topic %></td>
+          <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+          <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Topic', new_topic_path %>
+  <br>
+
+  <%= link_to 'New Topic', new_topic_path %>
+</body>
