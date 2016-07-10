@@ -30,8 +30,12 @@
           <td><%= button_to '+1', upvote_topic_path(topic), method: :post %></td>
           <td><%= button_to '-1', downvote_topic_path(topic), method: :post %></td>
           <td><%= link_to 'Show', topic %></td>
-          <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-          <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          
+          <% if current_user == topic.user %>
+            <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+            <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+
         </tr>
       <% end %>
     </tbody>
