@@ -7,6 +7,7 @@ class TopicsController < ApplicationController
   # GET /topics.json
   def index
     @topics = Topic.all
+    # @topics = Topic.order(:vote)
   end
 
   # GET /topics/1
@@ -74,6 +75,11 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
     @topic.down_votes.create
     redirect_to(topics_path)
+  end
+
+  def totalvote
+    @topic = Topic.find(params[:id])
+    @topic.votes.count - @topic.down_votes.count
   end
 
   private
